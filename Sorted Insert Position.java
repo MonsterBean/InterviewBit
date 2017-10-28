@@ -11,13 +11,14 @@ Here are few examples.
 [1,3,5,6], 2 → 1
 [1,3,5,6], 7 → 4
 [1,3,5,6], 0 → 0
+
 */
 
 public class Solution {
 	public int searchInsert(ArrayList<Integer> a, int key) {
 	    int n = a.size();
-	    if(n<1)
-	        return 0;
+	    if(n<1){
+	        return 0;}
         int low=0,high=n-1,mid;
         while(low <= high){
             mid = low + (high-low)/2;
