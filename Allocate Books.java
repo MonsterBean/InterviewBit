@@ -27,13 +27,13 @@ There are 2 number of students. Books can be distributed in following fashion :
   3) [12, 34, 67] and [90]
       Max number of pages is allocated to student 1 with 12 + 34 + 67 = 113 pages
 
-Of the 3 cases, Option 3 has the minimum pages = 113. 
+Of the 3 cases, Option 3 has the minimum pages = 113.
 */
 
 public class Solution {
 	public int books(ArrayList<Integer> list, int m) {
-	    if(list.size() < m)
-	        return -1;
+	    if(list.size() < m){
+	        return -1;}
         if(list.size() == m)
             return (int)getMax(list);
 	    long ans = partition(list , list.size() , m);
