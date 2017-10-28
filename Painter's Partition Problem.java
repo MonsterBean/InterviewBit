@@ -24,6 +24,7 @@ Input :
   T : 5
   L : [1, 10]
 Output : 50
+
 */
 
 public class Solution {
@@ -36,8 +37,8 @@ public class Solution {
 	
 	public static long getSum(ArrayList<Integer> list){
 	    long sum=0;
-	    for(int i:list)
-	        sum += (long)i;
+	    for(int i:list){
+	        sum += (long)i;}
         return sum;
 	}
 	
